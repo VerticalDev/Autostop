@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class CarManager : MonoBehaviour {
 
 	public static CarManager instance;	
-	void Awake()	{		if (instance == null) {			instance = this;		DontDestroyOnLoad(this);		}	}
+	void Awake(){if(instance == null){instance = this;DontDestroyOnLoad(this);}}
 
 	List<Car> cars = new List<Car>();
 
