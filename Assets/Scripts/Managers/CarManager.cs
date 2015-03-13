@@ -7,7 +7,7 @@ public class CarManager : MonoBehaviour {
 	public static CarManager instance;	
 	void Awake(){if(instance == null){instance = this;DontDestroyOnLoad(this);}}
 
-	List<Car> cars = new List<Car>();
+	public List<Car> cars = new List<Car>();
 
 	// Use this for initialization
 	void Start () {

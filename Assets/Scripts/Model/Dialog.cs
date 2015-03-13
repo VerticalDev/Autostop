@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Dialog : MonoBehaviour {
+[System.Serializable]
+public class Dialog {
 
 	public Passenger passengers; 
 	public string dialog;
