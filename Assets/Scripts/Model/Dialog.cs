@@ -5,16 +5,8 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Dialog {
 
-	public Passenger passengers; 
+	public string passengerName; 
 	public string dialog;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public Dialog nextDialog; 
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
