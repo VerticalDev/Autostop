@@ -11,19 +11,23 @@ public class VacheSpawner : MonoBehaviour {
 
 	public Transform player;
 
-	void Start()
-	{
-		putVache ();
-	}
-
 	public void putVache()
 	{
 		if (currentVache == null) {
 			GameObject vacheInst = Instantiate (vache, transform.position, transform.rotation) as GameObject;
 			
-			VacheBehaviour behaviour = vacheInst.GetComponent<VacheBehaviour> ();
-			behaviour.player = player;
-			behaviour.spawner = this;
+			currentVache = vacheInst.GetComponent<VacheBehaviour> ();
+			currentVache.player = player;
+			currentVache.spawner = this;
 		}
+	}
+
+	public void deputVache()
+	{
+		if (currentVache != null) {
+			currentVache.GetComponent<Collider> ().enabled = false;
+			currentVache.onLoadcastComplete (null);
+		}
+
 	}
 }

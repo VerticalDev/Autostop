@@ -27,8 +27,8 @@ public class UIManager : MonoBehaviour {
 	public float speedDescente;
 
 	public Headbang headbang;
-	bool tired;
-	bool tiredFinished;
+	[HideInInspector] public bool tired;
+	[HideInInspector] public bool tiredFinished;
 
 	public int numberPoint;
 
@@ -42,8 +42,6 @@ public class UIManager : MonoBehaviour {
 	void Start()
 	{
 		updatePoints (0);
-
-		startTired ();
 	}
 
 	void Update()
