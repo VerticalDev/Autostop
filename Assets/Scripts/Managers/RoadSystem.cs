@@ -16,7 +16,7 @@ public class RoadSystem : MonoBehaviour {
 
 	public void createProp(){
 		if(Random.value<citySpawnProbability)
-			Instantiate (props [Random.Range (0, props.Count+1)], propSpawnLoc.position, Quaternion.identity);
+			Instantiate (props [Random.Range (0, props.Count)], propSpawnLoc.position, Quaternion.identity);
 	}
 
 }
