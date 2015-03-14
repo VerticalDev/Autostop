@@ -11,20 +11,23 @@ public class RoadManager : MonoBehaviour {
 	public float carSpawnProbability;
 
 	public List<GameObject> cars = new List<GameObject>();
+	public List<GameObject> displayedCars = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
 		StartCoroutine ("carSpawnRoutine");
 	}
 
-	public IEnumerable carSpawnRoutine(){
+	public IEnumerator carSpawnRoutine(){
 		yield return new WaitForSeconds(2f);
-		instanciateCar (Random.Range(0,cars.Count-1));
+		instanciateCar (0); 	
+		StartCoroutine ("carSpawnRoutine");
 	}
 	
     public void instanciateCar(int carNum){
 		GameObject car = (GameObject)Instantiate ( (Object)cars [carNum], carSpawnTransform.position, Quaternion.identity);
 		car.name = "car";
+		displayedCars.Add (car);
 	}
 
 	// Update is called once per frame
