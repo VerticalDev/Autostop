@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dest: {fileID: 0}
   limit: {fileID: 0}
+  type: 2
   pulled: 0
 --- !u!195 &19552156
 NavMeshAgent:

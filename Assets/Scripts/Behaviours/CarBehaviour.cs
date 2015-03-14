@@ -7,6 +7,8 @@ public class CarBehaviour : MonoBehaviour {
 	public Transform limit;
 	NavMeshAgent agent;
 
+	public GameManager.carType type;
+
 	public bool pulled = false;
 
 	void Awake(){
@@ -41,12 +43,17 @@ public class CarBehaviour : MonoBehaviour {
 	}
 
 	public void onLoadcastComplete(){
-		if (!VacheSpawner.instance.closetoplayer) {
+		if (VacheSpawner.instance==null || !VacheSpawner.instance.closetoplayer) {
 			pulled = true;
 			Transform target = GameObject.Find("carStop").transform;	
 			agent.SetDestination (target.position); 
 			CardboxRaycaster.instance.off = true;
 		}
 
+		Invoke ("leaveScene", 2f);
+	}
+
+	public void leaveScene(){
+		GameManager.instance.gotoCar(type);
 	}
 }
