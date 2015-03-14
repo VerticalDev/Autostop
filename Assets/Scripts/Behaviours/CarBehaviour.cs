@@ -3,16 +3,21 @@ using System.Collections;
 
 public class CarBehaviour : MonoBehaviour {
 
-	Transform dest;
+	public Transform dest;
+	NavMeshAgent agent;
+
+	void Awake(){
+		agent = GetComponent<NavMeshAgent> ();
+	}
 
 	// Use this for initialization
 	void Start () {
-		dest = GameObject.Find ("CarTarget").transform;
-		GetComponent<NavMeshAgent> ().SetDestination (dest.position);
+		agent.SetDestination (dest.position);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (agent.remainingDistance <= agent.stoppingDistance)
+			Destroy (gameObject);
 	}
 }
