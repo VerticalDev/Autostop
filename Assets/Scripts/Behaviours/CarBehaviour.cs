@@ -14,6 +14,12 @@ public class CarBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		if (dest != null) {
+			agent.SetDestination (dest.position);
+		}
+	}
+
+	public void moveToDest(){
 		agent.SetDestination (dest.position);
 	}
 	
