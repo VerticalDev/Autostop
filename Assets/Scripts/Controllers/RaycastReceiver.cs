@@ -6,6 +6,8 @@ public class RaycastReceiver : MonoBehaviour {
 	public string methodName = "onRaycastLoad";
 	public string actionMethod = "onLoadcastComplete";
 
+	public float timeToCharge = 1f;
+
 	Collider colliderObj;
 
 	// Use this for initialization
