@@ -20,7 +20,7 @@ public class RoadManager : MonoBehaviour {
 
 	public IEnumerator carSpawnRoutine(){
 		yield return new WaitForSeconds(2f);
-		instanciateCar (0); 	
+		instanciateCar (Random.Range(0,cars.Count)); 	
 		StartCoroutine ("carSpawnRoutine");
 	}
 	
