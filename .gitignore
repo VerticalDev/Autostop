@@ -225,3 +225,6 @@ pip-log.txt
 *.sln
 *.userprefs
 Assets/ProjectResources/2D/texture.jpg
+Assembly-CSharp-vs.csproj
+*.csproj
+*.sln
