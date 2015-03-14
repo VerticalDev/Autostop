@@ -57,9 +57,6 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Softwares/Unity500/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Softwares/Unity500/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Softwares/Unity500/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>

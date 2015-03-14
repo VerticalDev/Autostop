@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Controllers\RaycastReceiver.cs" />
      <Compile Include="Assets\Scripts\Events\Events.cs" />
      <Compile Include="Assets\Scripts\Managers\CarManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\EncounterManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\RoadManager.cs" />
      <Compile Include="Assets\Scripts\Model\Car.cs" />
