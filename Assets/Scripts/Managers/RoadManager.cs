@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class RoadManager : MonoBehaviour {
 
 	public static RoadManager instance;
-	void Awake(){if (instance == null) {instance = this; DontDestroyOnLoad(this);}}
+	void Awake(){if (instance == null) {instance = this; }}
 
 	public List<Transform> carSpawnTransform;
 	public float carSpawnProbability;
