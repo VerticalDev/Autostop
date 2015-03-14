@@ -8,14 +8,5 @@ public class Car  {
 	public string carId; 
 	public List<Passenger> passengers = new List<Passenger>();
 	public List<Dialog> dialogs = new List<Dialog>(); 
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

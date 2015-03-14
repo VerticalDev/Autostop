@@ -9,13 +9,4 @@ public class Passenger {
 	public int pos; 
 	public GameObject prefab;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
