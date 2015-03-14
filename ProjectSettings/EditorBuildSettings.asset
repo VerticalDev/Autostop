@@ -6,4 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/Roads/MainScene.unity
+  - enabled: 1
+    path: Assets/Scenes/Cars/Carcadillac.unity
+  - enabled: 1
+    path: Assets/Scenes/Cars/Carcaravan.unity
+  - enabled: 1
+    path: Assets/Scenes/Cars/CarScene.unity
+  - enabled: 1
+    path: Assets/Scenes/Cars/Carvan.unity
+  - enabled: 1
+    path: Assets/Scenes/Cars/Carvolvo.unity
+  - enabled: 1
+    path: Assets/Scenes/Roads/Roadsummer.unity
+  - enabled: 1
+    path: Assets/Scenes/Roads/Roadsummer2.unity
+  - enabled: 1
+    path: Assets/Scenes/Roads/Roadwinter.unity
+  - enabled: 1
+    path: Assets/Scenes/Splash.unity
