@@ -18,6 +18,11 @@ public class RoadManager : MonoBehaviour {
 		StartCoroutine ("carSpawnRoutine");
 	}
 
+	void Update()
+	{
+
+	}
+
 	public IEnumerator carSpawnRoutine(){
 		yield return new WaitForSeconds(2f);
 		if(Random.value<carSpawnProbability) instanciateCar (Random.Range(0,cars.Count),0); 	
@@ -34,10 +39,5 @@ public class RoadManager : MonoBehaviour {
 
 		CarBehaviour cb = car.GetComponent<CarBehaviour> ();
 		cb.dest = GameObject.Find ("CarTarget"+lane.ToString()).transform;
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
