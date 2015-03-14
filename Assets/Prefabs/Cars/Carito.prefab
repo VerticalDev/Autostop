@@ -11,7 +11,8 @@ GameObject:
   - 65: {fileID: 6559256}
   - 195: {fileID: 19536566}
   - 114: {fileID: 11480124}
-  m_Layer: 0
+  - 114: {fileID: 11420764}
+  m_Layer: 8
   m_Name: Carito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,11 +100,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122960}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!95 &9585232
 Animator:
   serializedVersion: 3
@@ -121,6 +122,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11420764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef3b05da72789447b2a8c1524f1347c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  methodName: onRaycastLoad
+  actionMethod: onLoadcastComplete
 --- !u!114 &11480124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d53d0e9771515449e49c88f91e11aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dest: {fileID: 0}
 --- !u!195 &19536566
 NavMeshAgent:
   m_ObjectHideFlags: 1
