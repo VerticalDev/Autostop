@@ -18,10 +18,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cars/Carvolvo.unity
   - enabled: 1
-    path: Assets/Scenes/Roads/Roadsummer.unity
+    path: Assets/Scenes/Roads/Roadsummer1.unity
   - enabled: 1
     path: Assets/Scenes/Roads/Roadsummer2.unity
   - enabled: 1
-    path: Assets/Scenes/Roads/Roadwinter.unity
+    path: Assets/Scenes/Roads/Roadwinter1.unity
   - enabled: 1
     path: Assets/Scenes/Splash.unity

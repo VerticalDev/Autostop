@@ -6,6 +6,8 @@ public class CarBehaviour : MonoBehaviour {
 	public Transform dest;
 	NavMeshAgent agent;
 
+	public bool pulled = false;
+
 	void Awake(){
 		agent = GetComponent<NavMeshAgent> ();
 	}
@@ -17,7 +19,13 @@ public class CarBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (agent.remainingDistance <= agent.stoppingDistance)
+		if (!pulled && agent.remainingDistance <= agent.stoppingDistance)
 			Destroy (gameObject);
+	}
+
+	public void onLoadcastComplete(){
+		pulled = true;
+		Transform target = GameObject.Find("carStop").transform;	
+		agent.SetDestination (target.position); 
 	}
 }
