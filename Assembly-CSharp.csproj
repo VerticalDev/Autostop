@@ -49,11 +49,13 @@
      <Compile Include="Assets\Scripts\Behaviours\CarBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviours\VacheBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviours\VacheSpawner.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BoxDialogController.cs" />
      <Compile Include="Assets\Scripts\Controllers\CardboxRaycaster.cs" />
      <Compile Include="Assets\Scripts\Controllers\HandController.cs" />
      <Compile Include="Assets\Scripts\Controllers\RaycastReceiver.cs" />
      <Compile Include="Assets\Scripts\Events\Events.cs" />
      <Compile Include="Assets\Scripts\Managers\CarManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\DialogManager.cs" />
      <Compile Include="Assets\Scripts\Managers\EncounterManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\RoadManager.cs" />
