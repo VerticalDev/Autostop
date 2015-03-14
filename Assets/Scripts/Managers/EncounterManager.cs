@@ -22,11 +22,13 @@ public class EncounterManager : MonoBehaviour {
 	public Headbang headbang;
 
 	bool waitingEndOfEvent = false;
+
+	public bool noEncounterHere = false;
 	
 	void Start()
 	{
 
-		if(VacheSpawner.instance != null && headbang != null) StartCoroutine (encounterRoutine ());
+		if(!noEncounterHere && VacheSpawner.instance != null && headbang != null) StartCoroutine (encounterRoutine ());
 	}
 
 	IEnumerator encounterRoutine()

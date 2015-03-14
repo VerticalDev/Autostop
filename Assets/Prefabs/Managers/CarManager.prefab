@@ -68,7 +68,7 @@ MonoBehaviour:
       dialog:
       - Marley;C'est la detente totale !
       - Yolo;En route vers l'aventure !
-    leaveDialog: 
+    leaveDialog: Yolo;Desole man ! On se separe ici !
   - carId: ClassyRoad
     passengers: []
     dialogs: []

@@ -19,15 +19,17 @@ public class CarBehaviour : MonoBehaviour {
 	void Start () {
 		if (dest != null) {
 			agent.SetDestination (dest.position);
+			if(dest.name.Contains("Target1")) GetComponent<Collider>().enabled = false;
+		}
+		GameObject player = GameObject.Find ("CardboardMain");
+		if (player != null) {
+			limit = player.transform;
 		}
 	}
 
 	public void moveToDest(){
 		agent.SetDestination (dest.position);
-		GameObject player = GameObject.Find ("CardboardMain");
-		if (player != null) {
-			limit = player.transform;
-		}
+
 	}
 	
 	// Update is called once per frame
