@@ -28,8 +28,13 @@ public class CircleTarget : MonoBehaviour {
 		}
 	}
 
+	private RaycastReceiver lastrr;
 	public void onRaycastReceived(RaycastReceiver rr)
 	{
+		if (rr != lastrr) {
+			imageCircle.fillAmount = 0f;
+			lastrr = rr;
+		}
 		lastTimeReceiveRaycast = Time.time;
 		imageCircle.fillAmount += Time.deltaTime/rr.timeToCharge;
 
