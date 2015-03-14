@@ -18,6 +18,11 @@ public class RoadManager : MonoBehaviour {
 		StartCoroutine ("carSpawnRoutine");
 	}
 
+	void Update()
+	{
+
+	}
+
 	public IEnumerator carSpawnRoutine(){
 		yield return new WaitForSeconds(2f);
 		instanciateCar (Random.Range(0,cars.Count)); 	
@@ -30,10 +35,5 @@ public class RoadManager : MonoBehaviour {
 		mesh.GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, Random.Range(1,3)*0.046875f);
 		car.name = "car";
 		displayedCars.Add (car);
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
