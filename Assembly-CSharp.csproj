@@ -39,18 +39,36 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Softwares/Unity500/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Softwares/Unity500/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\Cardboard.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardEye.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardGUI.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardGUIMouse.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardGUIWindow.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardHead.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\SkyboxMesh.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\StereoController.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\StereoLensFlare.cs" />
+     <Compile Include="Assets\Scripts\Managers\CarManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Model\Car.cs" />
+     <Compile Include="Assets\Scripts\Model\Dialog.cs" />
+     <Compile Include="Assets\Scripts\Model\Passenger.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyThisTimed.cs" />
      <Compile Include="Assets\Scripts\Utils\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\Scripts\Utils\RotationHelper.cs" />
+     <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
+     <None Include="Assets\Cardboard\Resources\GUIScreen.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Softwares/Unity500/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
