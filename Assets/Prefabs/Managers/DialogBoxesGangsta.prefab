@@ -138,7 +138,7 @@ GameObject:
   - 4: {fileID: 448056}
   - 114: {fileID: 11410806}
   m_Layer: 0
-  m_Name: DialogBoxes
+  m_Name: DialogBoxesGangsta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
