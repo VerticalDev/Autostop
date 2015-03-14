@@ -48,8 +48,6 @@ MonoBehaviour:
   - {fileID: 150994, guid: 31b1ac09c851b644ba4e2c9a66dbf307, type: 2}
   - {fileID: 151306, guid: 74ef85bcae921704d957847f08bc5fb4, type: 2}
   - {fileID: 132616, guid: b1fe84d9fe7dbb844adc2157ecf4e1dd, type: 2}
-  - {fileID: 185448, guid: 6f14721fd4565b744a83451a303a6739, type: 2}
-  - {fileID: 122960, guid: cfe104505a9a63f40b232c28763a346d, type: 2}
   displayedCars: []
 --- !u!1001 &100100000
 Prefab:
