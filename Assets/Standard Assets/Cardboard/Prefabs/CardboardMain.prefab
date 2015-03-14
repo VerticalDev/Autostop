@@ -47,6 +47,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11491750}
   m_Layer: 0
   m_Name: CardboardMain
   m_TagString: Untagged
@@ -123,6 +124,8 @@ GameObject:
   - 222: {fileID: 22202676}
   - 114: {fileID: 11403246}
   - 114: {fileID: 11482794}
+  - 114: {fileID: 11425246}
+  - 114: {fileID: 11495382}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -141,6 +144,8 @@ GameObject:
   - 222: {fileID: 22297256}
   - 114: {fileID: 11453344}
   - 114: {fileID: 11481860}
+  - 114: {fileID: 11418470}
+  - 114: {fileID: 11412668}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -266,7 +271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3.88000011}
+  m_LocalPosition: {x: .882000029, y: 1.48399997, z: .179000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400008}
@@ -317,7 +322,7 @@ Camera:
     y: 0
     width: .5
     height: 1
-  near clip plane: .300000012
+  near clip plane: .100000001
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -349,7 +354,7 @@ Camera:
     y: 0
     width: .5
     height: 1
-  near clip plane: .300000012
+  near clip plane: .100000001
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -381,7 +386,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: .300000012
+  near clip plane: .100000001
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -546,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: .0482759476, a: 1}
+  m_Color: {r: 0, g: 1, b: .958620548, a: 1}
   m_Sprite: {fileID: 21300000, guid: 01e8bce96967d68429df83050fe67405, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
@@ -576,6 +581,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 2
+--- !u!114 &11412668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &11414378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -597,6 +616,20 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11418470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &11418548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -613,6 +646,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11425246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &11427458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -662,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: .0482759476, a: 1}
+  m_Color: {r: 0, g: 1, b: .958620548, a: 1}
   m_Sprite: {fileID: 21300000, guid: 01e8bce96967d68429df83050fe67405, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
@@ -794,6 +841,21 @@ MonoBehaviour:
   imageCircle: {fileID: 11403246}
   timeTarget: 1
   sendMessageAtGoal: 1
+--- !u!114 &11491750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33218e1e307b0ea4bba1dee314886690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogPrefab: {fileID: 187740, guid: b7a73e8672cd80344884eab4aac1ae74, type: 2}
+  arrowPrefab: {fileID: 187740, guid: 3873e385514883c4d99326f283fb85f8, type: 2}
+  panelLeft: {fileID: 22421038}
+  panelRight: {fileID: 22451246}
 --- !u!114 &11491934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -816,6 +878,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec61c2cea01236c4983b011c95c37b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11495382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -896,7 +972,7 @@ Canvas:
   serializedVersion: 2
   m_RenderMode: 1
   m_Camera: {fileID: 2000002}
-  m_PlaneDistance: .5
+  m_PlaneDistance: .150000006
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -913,7 +989,7 @@ Canvas:
   serializedVersion: 2
   m_RenderMode: 1
   m_Camera: {fileID: 2000000}
-  m_PlaneDistance: .5
+  m_PlaneDistance: .150000006
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
