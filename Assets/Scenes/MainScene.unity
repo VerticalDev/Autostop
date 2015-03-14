@@ -373,7 +373,7 @@ Prefab:
       objectReference: {fileID: 593302998}
     - target: {fileID: 11492234, guid: 75fe6df8f136c014b81942ff3181b455, type: 2}
       propertyPath: carSpawnProbability
-      value: .300000012
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75fe6df8f136c014b81942ff3181b455, type: 2}

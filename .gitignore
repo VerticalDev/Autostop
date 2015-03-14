@@ -224,3 +224,4 @@ pip-log.txt
 *.csproj
 *.sln
 *.userprefs
+Assets/ProjectResources/2D/texture.jpg
