@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager instance;
 	void Awake(){if (instance == null) {instance = this;DontDestroyOnLoad(this);}}
 
-	AsyncOperation async = new AsyncOperation();
+	AsyncOperation async = null;
 
 	public enum carType {
 		van,
@@ -27,9 +27,11 @@ public class GameManager : MonoBehaviour {
 
 	public int carsTaken = 0; 
 
+	public bool goToRandomRoadAtStart = true;
+
 	// Use this for initialization
 	void Start () {
-		gotoRoad (roadType.summer1);
+		if(goToRandomRoadAtStart) gotoRoad (roadType.summer1);
 	}
 
 	public void gotoRoad(roadType type){
