@@ -43,41 +43,41 @@ MonoBehaviour:
   - carId: GangaMan
     passengers:
     - name: Bob
-      pos: 0
-      prefab: {fileID: 0}
     - name: Rasta
-      pos: 1
-      prefab: {fileID: 0}
     - name: 'Yolo '
-      pos: 2
-      prefab: {fileID: 0}
+    - name: Marley
+    - name: Autoradio
     dialogs:
     - passengerName: Bob
-      dialog: LoL t'es stone mec
+      dialog:
+      - Bob;Hun tss hun tss...
     - passengerName: Rasta
-      dialog: 'Ragga Zion Move Up '
+      dialog:
+      - Rasta;Oh man ! C'est sympa d'avoir pris un frere !
+      - Marley;T'inquietes man ! L'amour, c'est la vie !
+      - Rasta;C'est pas l'oxygene plutot man ?
     - passengerName: Yolo
-      dialog: Bombaclash yeye
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
-    - passengerName: 
-      dialog: 
+      dialog:
+      - Yolo;Buffalo solider tut tut... tut tut...
+      - Marley;Dwedeuloque wasta... tutut...
+    - passengerName: Autoradio
+      dialog:
+      - Autoradio;Krrrk kr rkrrrrrkrr
+      - Yolo;Hey, l'autoradio de l'amour man !
+    - passengerName: Marley
+      dialog:
+      - Marley;C'est la detente totale !
+      - Yolo;En route vers l'aventure !
+    leaveDialog: 
   - carId: ClassyRoad
     passengers: []
     dialogs: []
+    leaveDialog: 
   - carId: PussyWagon
     passengers: []
     dialogs: []
+    leaveDialog: 
+  timeInCar: 25
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

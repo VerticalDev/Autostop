@@ -6,7 +6,6 @@ using System.Collections.Generic;
 public class Dialog {
 
 	public string passengerName; 
-	public string dialog;
-	public Dialog nextDialog; 
-	
+	public List<string> dialog;
+
 }

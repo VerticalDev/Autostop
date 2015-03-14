@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Passenger {
 
 	public string name;
-	public int pos; 
-	public GameObject prefab;
+	//public int pos; 
+	//public GameObject prefab;
 
 }

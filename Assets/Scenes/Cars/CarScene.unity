@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 88210000}
+    - target: {fileID: 147282, guid: 7c63467861ee1af4e9acafccbc3e1d33, type: 2}
+      propertyPath: m_Name
+      value: DialogBoxesRastas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c63467861ee1af4e9acafccbc3e1d33, type: 2}
   m_IsPrefabParent: 0
@@ -295,6 +299,10 @@ Prefab:
     - target: {fileID: 456314, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
+      propertyPath: cars.Array.data[0].leaveDialog
+      value: Yolo;Desole man ! Nos routes se separent !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}

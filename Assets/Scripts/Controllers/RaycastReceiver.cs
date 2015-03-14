@@ -10,6 +10,8 @@ public class RaycastReceiver : MonoBehaviour {
 
 	Collider colliderObj;
 
+	public bool disableColliderOnComplete = true;
+
 	// Use this for initialization
 	void Start () {
 		colliderObj = GetComponent<Collider> ();
@@ -30,7 +32,7 @@ public class RaycastReceiver : MonoBehaviour {
 
 	public void onRaycastComplete()
 	{
-		colliderObj.enabled = false;
+		if(disableColliderOnComplete) colliderObj.enabled = false;
 		if (actionMethod != "onRaycastComplete") 
 			this.SendMessage(actionMethod, this, SendMessageOptions.DontRequireReceiver);
 

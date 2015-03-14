@@ -32,7 +32,7 @@ public class CarBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!pulled && agent.destination!=null && agent.remainingDistance>0 && (agent.remainingDistance <= agent.stoppingDistance))
+		if (!pulled && agent.remainingDistance>0 && (agent.remainingDistance <= agent.stoppingDistance))
 			Destroy (gameObject);
 
 		if (!pulled && limit != null && transform.position.x > limit.position.x) {
