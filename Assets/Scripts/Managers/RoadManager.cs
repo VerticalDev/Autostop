@@ -40,5 +40,6 @@ public class RoadManager : MonoBehaviour {
 
 		CarBehaviour cb = car.GetComponent<CarBehaviour> ();
 		cb.dest = GameObject.Find ("CarTarget"+lane.ToString()).transform;
+		cb.moveToDest ();
 	}
 }

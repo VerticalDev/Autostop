@@ -42,6 +42,7 @@ public class Headbang : MonoBehaviour {
 	public void checkHeadBang () {
 		Vector3 actualForward = vertical ? verticalGameObject.forward : transform.forward;
 		Vector3 actualOldForward = vertical ? oldForwardVerti : oldForwardHori;
+		Debug.Log ("tac tac tac");
 		if (Vector3.Angle (actualForward, actualOldForward) > (vertical ? necessaryAngleVerti : necessaryAngleHori)) {
 
 			Vector3 A = transform.position + actualOldForward;
@@ -57,6 +58,7 @@ public class Headbang : MonoBehaviour {
 
 			if(necessaryMovementSuccessful >= necessaryMovementRequired)
 			{
+				endChecking();
 				objectToCall.SendMessage(methodName);
 			}
 		}
