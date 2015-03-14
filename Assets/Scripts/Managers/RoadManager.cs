@@ -26,6 +26,8 @@ public class RoadManager : MonoBehaviour {
 	
     public void instanciateCar(int carNum){
 		GameObject car = (GameObject)Instantiate ( (Object)cars [carNum], carSpawnTransform.position, Quaternion.identity);
+		Transform mesh = car.transform.GetChild (0);
+		mesh.GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, Random.Range(1,3)*0.046875f);
 		car.name = "car";
 		displayedCars.Add (car);
 	}
