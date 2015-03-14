@@ -48,7 +48,7 @@ public class EncounterManager : MonoBehaviour {
 				VacheSpawner.instance.putVache();
 				break;
 			case EncounterType.MOUETTE:
-				headbang.startChecking(false, 10, this.gameObject, "endOfEvent");
+				headbang.startChecking(false, 5, this.gameObject, "endOfEvent");
 				UIManager.instance.displayDialog("AAAAH ! SECOUEZ LA TETE DE DROITE A GAUCHE !", maxEncounterDuration);
 				UIManager.instance.displayArrow(true, true, false, false, maxEncounterDuration);
 				break;

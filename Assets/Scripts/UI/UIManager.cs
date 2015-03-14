@@ -144,7 +144,7 @@ public class UIManager : MonoBehaviour {
 
 	public void startTired()
 	{
-		headbang.startChecking (false, 10, this.gameObject, "finishTired");
+		headbang.startChecking (false, 5, this.gameObject, "finishTired");
 		displayDialog ("L'ENNUI VOUS GAGNE ! SECOUEZ LA TETE POUR VOUS REVEILLER !", 7f);
 		displayArrow (true, true, false, false, 7f);
 		tiredLeft.enabled = true;
