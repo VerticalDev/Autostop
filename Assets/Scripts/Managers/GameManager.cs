@@ -19,8 +19,11 @@ public class GameManager : MonoBehaviour {
 	public enum roadType {
 		summer,
 		summer2,
-		winter
+		winter,
+		winter2
 	}
+
+	public float winterProbability = 0.3f;
 
 	public int carsTaken = 0; 
 
@@ -33,6 +36,14 @@ public class GameManager : MonoBehaviour {
 		async = Application.LoadLevelAsync ("Road" + type.ToString ());
 	}
 
+	public void gotoRandomRoad(){
+		string roadName = "Road";
+		string.Concat(roadName, ((Random.value<winterProbability) ? "winter": "summer"));
+		string.Concat(roadName, Random.Range(1,2).ToString());
+		Debug.Log ("Goin' to : " + roadName);
+		async = Application.LoadLevelAsync (roadName);
+	}
+
 	public void gotoCar(carType type){
 		async = Application.LoadLevelAsync ("Car" + type.ToString ());
 	}
@@ -41,6 +52,10 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		if (async.progress > 0 && async.progress < 1) {
 			Debug.Log("Loadin'");
+		}
+
+		if(Input.GetKeyDown(KeyCode.F1)){
+			gotoRandomRoad();
 		}
 	}
 }

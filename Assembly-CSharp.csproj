@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Behaviours\CarBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\VacheBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\VacheSpawner.cs" />
      <Compile Include="Assets\Scripts\Controllers\CardboxRaycaster.cs" />
      <Compile Include="Assets\Scripts\Controllers\RaycastReceiver.cs" />
      <Compile Include="Assets\Scripts\Events\Events.cs" />
@@ -56,6 +58,7 @@
      <Compile Include="Assets\Scripts\Model\Car.cs" />
      <Compile Include="Assets\Scripts\Model\Dialog.cs" />
      <Compile Include="Assets\Scripts\Model\Passenger.cs" />
+     <Compile Include="Assets\Scripts\Movements\Headbang.cs" />
      <Compile Include="Assets\Scripts\UI\CircleTarget.cs" />
      <Compile Include="Assets\Scripts\UI\UIArrow.cs" />
      <Compile Include="Assets\Scripts\UI\UIManager.cs" />
@@ -63,7 +66,6 @@
      <Compile Include="Assets\Scripts\Utils\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\Scripts\Utils\LockAndHideCursor.cs" />
      <Compile Include="Assets\Scripts\Utils\RotationHelper.cs" />
-     <Compile Include="Assets\Scripts\Utils\TestCube.cs" />
      <None Include="Assets\Standard Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Standard Assets\Cardboard\Resources\GUIScreen.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
