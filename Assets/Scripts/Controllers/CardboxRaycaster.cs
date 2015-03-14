@@ -7,6 +7,17 @@ public class CardboxRaycaster : MonoBehaviour {
 	RaycastHit hit;
 	Camera cam;
 	int mask;
+
+	public bool off = false;
+
+	public static CardboxRaycaster instance;
+
+	void Awake()
+	{
+		if (instance == null) {
+			instance = this;
+		}
+	}
 	
 	// Use this for initialization
 	void Start () {
@@ -16,7 +27,8 @@ public class CardboxRaycaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if (off)
+			return;
 		ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 		if (Physics.Raycast (ray, out hit, 40f, mask)) {
 			if(hit.collider != null && hit.collider.GetComponent<RaycastReceiver>() != null)

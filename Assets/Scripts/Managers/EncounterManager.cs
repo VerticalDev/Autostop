@@ -48,8 +48,8 @@ public class EncounterManager : MonoBehaviour {
 				break;
 			case EncounterType.MOUETTE:
 				headbang.startChecking(false, 10, this.gameObject, "endOfEvent");
-				UIManager.instance.displayDialog("AAAAH ! SECOUEZ LA TETE DE DROITE A GAUCHE !", 7f);
-				UIManager.instance.displayArrow(true, true, false, false, 7f);
+				UIManager.instance.displayDialog("AAAAH ! SECOUEZ LA TETE DE DROITE A GAUCHE !", maxEncounterDuration);
+				UIManager.instance.displayArrow(true, true, false, false, maxEncounterDuration);
 				break;
 			case EncounterType.FATIGUE:
 				UIManager.instance.startTired();
@@ -90,6 +90,9 @@ public class EncounterManager : MonoBehaviour {
 
 	public void endOfEvent()
 	{
+		headbang.endChecking();
+		UIManager.instance.destroyArrow();
+		UIManager.instance.destroyDialog();
 		waitingEndOfEvent = false;
 	}
 }
