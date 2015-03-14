@@ -188,12 +188,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b907dc6279037e245b73f31f0701d6ed, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &746009108
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11443854, guid: 1c33eece33c60a5438a6496396d64597,
-    type: 2}
-  m_PrefabInternal: {fileID: 871412171}
-  m_Script: {fileID: 11500000, guid: f791d57fbc690ed46ae7b58b1d125d35, type: 3}
 --- !u!1001 &750493973
 Prefab:
   m_ObjectHideFlags: 0
@@ -233,10 +227,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11485432, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
-      propertyPath: spawner
-      value: 
-      objectReference: {fileID: 746009108}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
   m_IsPrefabParent: 0
@@ -494,33 +484,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 415482, guid: 75fe6df8f136c014b81942ff3181b455, type: 2}
   m_PrefabInternal: {fileID: 858047000}
---- !u!1 &1585285846
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 152796, guid: 2c6979b47508d7048b2effdb088a0f5e, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1585285847}
-  m_Layer: 0
-  m_Name: carStop
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1585285847
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 422852, guid: 2c6979b47508d7048b2effdb088a0f5e, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1585285846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 300, y: .0900000334, z: -2.58999991}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1085285294}
-  m_RootOrder: 4
 --- !u!1 &1631282019
 GameObject:
   m_ObjectHideFlags: 0

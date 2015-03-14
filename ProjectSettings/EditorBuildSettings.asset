@@ -25,5 +25,3 @@ EditorBuildSettings:
     path: Assets/Scenes/Roads/Roadwinter1.unity
   - enabled: 1
     path: Assets/Scenes/Splash.unity
-  - enabled: 1
-    path: Assets/Scenes/Roads/Roadwinter2.unity

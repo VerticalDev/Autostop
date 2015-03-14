@@ -19,6 +19,8 @@ public class EncounterManager : MonoBehaviour {
 
 	public float maxEncounterDuration = 10f;
 
+	public bool noEncounterHere;
+
 	public Headbang headbang;
 
 	bool waitingEndOfEvent = false;
@@ -26,7 +28,7 @@ public class EncounterManager : MonoBehaviour {
 	void Start()
 	{
 
-		if(VacheSpawner.instance != null && headbang != null) StartCoroutine (encounterRoutine ());
+		if(!noEncounterHere && VacheSpawner.instance != null && headbang != null) StartCoroutine (encounterRoutine ());
 	}
 
 	IEnumerator encounterRoutine()
@@ -38,7 +40,7 @@ public class EncounterManager : MonoBehaviour {
 			yield return new WaitForSeconds(Random.Range(encounterMinStart, encounterMaxStart));
 
 			waitingEndOfEvent = true;
-			int encounter = 0;//Random.Range(0, 3);
+			int encounter = Random.Range(0, 3);
 			currentEncounterType = (EncounterType)encounter;
 			switch(currentEncounterType)
 			{
