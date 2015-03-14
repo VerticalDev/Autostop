@@ -18,6 +18,11 @@ public class UIManager : MonoBehaviour {
 	private GameObject arrowInstLeft;
 	private GameObject arrowInstRight;
 
+	public Text pointLeft;
+	public Text pointRight;
+
+	public int numberPoint;
+
 	void Awake()
 	{
 		if (instance == null) {
@@ -27,7 +32,7 @@ public class UIManager : MonoBehaviour {
 
 	void Start()
 	{
-
+		updatePoints (0);
 	}
 
 	public void displayDialog(string text, float time)
@@ -81,6 +86,25 @@ public class UIManager : MonoBehaviour {
 		arrow.right.SetActive (right);
 
 		Destroy (obj, time);
+	}
+
+	public void updatePoints(int value)
+	{
+		numberPoint += value;
+		pointLeft.text = "POINTS : " + numberPoint.ToString ("### ### ##0").Trim (' ');
+		pointRight.text = "POINTS : " + numberPoint.ToString ("### ### ##0").Trim (' ');
+	}
+
+	public void animPoints()
+	{
+		pointLeft.GetComponent<Animator> ().SetTrigger ("anim");
+		pointRight.GetComponent<Animator> ().SetTrigger ("anim");
+	}
+
+	public void unanimPoints()
+	{
+		pointLeft.GetComponent<Animator> ().SetTrigger ("exit");
+		pointRight.GetComponent<Animator> ().SetTrigger ("exit");
 	}
 
 }
