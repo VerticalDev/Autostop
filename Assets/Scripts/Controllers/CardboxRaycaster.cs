@@ -18,7 +18,7 @@ public class CardboxRaycaster : MonoBehaviour {
 	void Update () {
 
 		ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-		if (Physics.Raycast (ray, out hit, 10000f, mask)) {
+		if (Physics.Raycast (ray, out hit, 40f, mask)) {
 			if(hit.collider != null && hit.collider.GetComponent<RaycastReceiver>() != null)
 			{
 				Events.instance.FireRaycastReceivedHandler(hit.collider.GetComponent<RaycastReceiver>());
