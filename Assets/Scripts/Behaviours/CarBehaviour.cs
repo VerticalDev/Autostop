@@ -40,9 +40,12 @@ public class CarBehaviour : MonoBehaviour {
 	}
 
 	public void onLoadcastComplete(){
-		pulled = true;
-		Transform target = GameObject.Find("carStop").transform;	
-		agent.SetDestination (target.position); 
-		CardboxRaycaster.instance.off = true;
+		if (!VacheSpawner.instance.closetoplayer) {
+			pulled = true;
+			Transform target = GameObject.Find("carStop").transform;	
+			agent.SetDestination (target.position); 
+			CardboxRaycaster.instance.off = true;
+		}
+
 	}
 }

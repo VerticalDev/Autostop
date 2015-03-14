@@ -48,6 +48,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11491750}
+  - 114: {fileID: 11485432}
   m_Layer: 0
   m_Name: CardboardMain
   m_TagString: Untagged
@@ -1087,6 +1088,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageCircle: {fileID: 11403246}
   sendMessageAtGoal: 1
+--- !u!114 &11485432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3962512f539d04ba6cb1bf3cf55d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentEncounterType: 3
+  encounterMinStart: 10
+  encounterMaxStart: 20
+  maxEncounterDuration: 10
+  spawner: {fileID: 0}
+  headbang: {fileID: 11454546}
 --- !u!114 &11486546
 MonoBehaviour:
   m_ObjectHideFlags: 1

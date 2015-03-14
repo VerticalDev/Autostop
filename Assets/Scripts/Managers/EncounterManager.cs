@@ -19,7 +19,6 @@ public class EncounterManager : MonoBehaviour {
 
 	public float maxEncounterDuration = 10f;
 
-	public VacheSpawner spawner;
 	public Headbang headbang;
 
 	bool waitingEndOfEvent = false;
@@ -27,7 +26,7 @@ public class EncounterManager : MonoBehaviour {
 	void Start()
 	{
 
-		if(spawner != null && headbang != null) StartCoroutine (encounterRoutine ());
+		if(VacheSpawner.instance != null && headbang != null) StartCoroutine (encounterRoutine ());
 	}
 
 	IEnumerator encounterRoutine()
@@ -39,12 +38,12 @@ public class EncounterManager : MonoBehaviour {
 			yield return new WaitForSeconds(Random.Range(encounterMinStart, encounterMaxStart));
 
 			waitingEndOfEvent = true;
-			int encounter = Random.Range(0, 3);
+			int encounter = 0;//Random.Range(0, 3);
 			currentEncounterType = (EncounterType)encounter;
 			switch(currentEncounterType)
 			{
 			case EncounterType.VACHE:
-				spawner.putVache();
+				VacheSpawner.instance.putVache();
 				break;
 			case EncounterType.MOUETTE:
 				headbang.startChecking(false, 10, this.gameObject, "endOfEvent");
@@ -60,7 +59,7 @@ public class EncounterManager : MonoBehaviour {
 			while(waitingEndOfEvent && timePast < maxEncounterDuration)
 			{
 				if(currentEncounterType == EncounterType.FATIGUE && UIManager.instance.tired) endOfEvent();
-				if(currentEncounterType == EncounterType.VACHE && spawner.currentVache == null) endOfEvent();
+				if(currentEncounterType == EncounterType.VACHE && VacheSpawner.instance.currentVache == null) endOfEvent();
 				timePast += Time.deltaTime;
 				yield return 0;
 			}
@@ -70,7 +69,7 @@ public class EncounterManager : MonoBehaviour {
 				switch(currentEncounterType)
 				{
 				case EncounterType.VACHE:
-					spawner.deputVache();
+					VacheSpawner.instance.deputVache();
 					break;
 				case EncounterType.MOUETTE:
 					headbang.endChecking();

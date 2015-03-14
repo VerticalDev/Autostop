@@ -3,6 +3,9 @@ using System.Collections;
 
 public class VacheSpawner : MonoBehaviour {
 
+	public static VacheSpawner instance;
+	void Awake(){if (instance == null) {instance = this;}}
+
 	public GameObject vache;
 
 	public bool closetoplayer;
