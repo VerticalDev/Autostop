@@ -175,7 +175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   methodName: onRaycastLoad
   actionMethod: onLoadcastComplete
-  timeToCharge: 5
+  timeToCharge: 3
+  disableColliderOnComplete: 1
 --- !u!195 &19567998
 NavMeshAgent:
   m_ObjectHideFlags: 1

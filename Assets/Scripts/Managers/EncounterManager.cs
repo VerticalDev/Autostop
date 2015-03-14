@@ -40,7 +40,7 @@ public class EncounterManager : MonoBehaviour {
 			yield return new WaitForSeconds(Random.Range(encounterMinStart, encounterMaxStart));
 
 			waitingEndOfEvent = true;
-			int encounter = 0;//Random.Range(0, 3);
+			int encounter = Random.Range(0, 3);
 			currentEncounterType = (EncounterType)encounter;
 			switch(currentEncounterType)
 			{
