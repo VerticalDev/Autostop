@@ -713,7 +713,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1578549c7fcc4f6fa1b063992091672, type: 3}
   m_Name: 
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
   m_Name: 
@@ -1222,8 +1222,8 @@ MonoBehaviour:
   encounterMinStart: 10
   encounterMaxStart: 20
   maxEncounterDuration: 10
-  noEncounterHere: 1
   headbang: {fileID: 11454546}
+  noEncounterHere: 1
 --- !u!114 &11486546
 MonoBehaviour:
   m_ObjectHideFlags: 1
