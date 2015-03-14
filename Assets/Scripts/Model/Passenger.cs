@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class GameManager : MonoBehaviour {
+[System.Serializable]
+public class Passenger {
 
-	public static GameManager instance;
-	void Awake(){if (instance == null) {instance = this;DontDestroyOnLoad(this);}}
+	public string name;
+	public int pos; 
+	public GameObject prefab;
 
 	// Use this for initialization
 	void Start () {
