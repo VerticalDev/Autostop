@@ -57,6 +57,9 @@ public class GameManager : MonoBehaviour {
 
 	public void gotoCar(carType type){
 		carsTaken++; 
+		if (UIManager.instance != null) {
+			UIManager.instance.enableLoading(true);
+		}
 		async = Application.LoadLevelAsync ("Car" + type.ToString ());
 	}
 

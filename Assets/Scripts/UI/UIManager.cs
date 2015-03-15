@@ -24,6 +24,9 @@ public class UIManager : MonoBehaviour {
 	public Image tiredLeft;
 	public Image tiredRight;
 
+	public Image loadingRight;
+	public Image loadingLeft;
+
 	public float speedDescente;
 
 	public Headbang headbang;
@@ -44,6 +47,11 @@ public class UIManager : MonoBehaviour {
 		updatePoints (0);
 	}
 
+	void OnLevelWasLoaded()
+	{
+		enableLoading (false);
+	}
+
 	void Update()
 	{
 		if (tired) {
@@ -59,6 +67,12 @@ public class UIManager : MonoBehaviour {
 				tiredFinished = false;
 			}
 		}
+	}
+
+	public void enableLoading(bool activate)
+	{
+		loadingRight.enabled = activate;
+		loadingLeft.enabled = activate;
 	}
 
 	public void displayDialog(string text, float time)
