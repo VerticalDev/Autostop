@@ -2944,7 +2944,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2125190175}
-  - 114: {fileID: 2125190176}
   m_Layer: 0
   m_Name: ABOVE
   m_TagString: Untagged
@@ -2974,22 +2973,3 @@ Transform:
   - {fileID: 740669017}
   m_Father: {fileID: 488249139}
   m_RootOrder: 5
---- !u!114 &2125190176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11487872, guid: d6324f406e7b79f4f8eb42c9eb2f50d5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2125190174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1347817507220a4384f3ff6f7c24546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveUnitsPerSecond:
-    value: {x: 0, y: 0, z: 0}
-    space: 1
-  rotateDegreesPerSecond:
-    value: {x: 0, y: -2, z: 0}
-    space: 1
-  ignoreTimescale: 0

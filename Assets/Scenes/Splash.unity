@@ -126,6 +126,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11479132, guid: 294408e284c1d4c4285272519d2a847b, type: 2}
+      propertyPath: winterProbability
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 294408e284c1d4c4285272519d2a847b, type: 2}
   m_IsPrefabParent: 0

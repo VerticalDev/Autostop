@@ -6,9 +6,15 @@ ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: car4inside
+    100004: Object005
     400000: //RootNode
+    400002: car4inside
+    400004: Object005
     2300000: //RootNode
+    2300002: car4inside
     3300000: //RootNode
+    3300002: car4inside
     4300000: car4inside
     9500000: //RootNode
   materials:
