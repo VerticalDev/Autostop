@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void gotoCar(carType type){
+		carsTaken++; 
 		async = Application.LoadLevelAsync ("Car" + type.ToString ());
 	}
 
