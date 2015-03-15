@@ -52,12 +52,17 @@ public class GameManager : MonoBehaviour {
 		if (roadName == "Roadsummer1" && alreadyGoToOne)
 			roadName = "Roadsummer2";
 		Debug.Log ("Goin' to : " + roadName);
+		if (UIManager.instance != null) {
+			UIManager.instance.changeLoadingSprite(UIManager.instance.surlaroute);
+			UIManager.instance.enableLoading(true);
+		}
 		async = Application.LoadLevelAsync (roadName);
 	}
 
 	public void gotoCar(carType type){
 		carsTaken++; 
 		if (UIManager.instance != null) {
+			UIManager.instance.changeLoadingSprite(UIManager.instance.embarquement);
 			UIManager.instance.enableLoading(true);
 		}
 		async = Application.LoadLevelAsync ("Car" + type.ToString ());

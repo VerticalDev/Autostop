@@ -465,7 +465,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3.88000011}
+  m_LocalPosition: {x: -1.55338669, y: 2.76270843, z: -3.0740962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 486138}
@@ -534,7 +534,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: .389999986, z: 1.2900002}
+  m_LocalPosition: {x: 12.8909998, y: -1, z: .889999986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   asource: {fileID: 8274734}
   clipWoosh: {fileID: 8300000, guid: 76aa4eaa79d49934f996a0445641daf9, type: 3}
   bee: {fileID: 147322}
-  noEncounterHere: 0
+  noEncounterHere: 1
 --- !u!114 &11486546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33218e1e307b0ea4bba1dee314886690, type: 3}
   m_Name: 
@@ -1590,6 +1590,8 @@ MonoBehaviour:
   tiredRight: {fileID: 11471764}
   loadingRight: {fileID: 11446882}
   loadingLeft: {fileID: 11479342}
+  embarquement: {fileID: 21300000, guid: 5e11eafa540be364b9b71e387132002c, type: 3}
+  surlaroute: {fileID: 21300000, guid: a9106e64872508d4f9c7825b356fddcd, type: 3}
   speedDescente: .330000013
   headbang: {fileID: 11454546}
   tired: 0

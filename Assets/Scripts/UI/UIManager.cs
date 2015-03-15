@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour {
 	public Image loadingRight;
 	public Image loadingLeft;
 
+	public Sprite embarquement;
+	public Sprite surlaroute;
+
 	public float speedDescente;
 
 	public Headbang headbang;
@@ -73,6 +76,12 @@ public class UIManager : MonoBehaviour {
 	{
 		loadingRight.enabled = activate;
 		loadingLeft.enabled = activate;
+	}
+
+	public void changeLoadingSprite(Sprite sprite)
+	{
+		loadingRight.sprite = sprite;
+		loadingLeft.sprite = sprite;
 	}
 
 	public void displayDialog(string text, float time)

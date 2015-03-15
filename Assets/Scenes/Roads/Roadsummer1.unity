@@ -388,6 +388,7 @@ Transform:
   - {fileID: 1876151542}
   - {fileID: 173918911}
   - {fileID: 1700307980}
+  - {fileID: 984450887}
   - {fileID: 562601085}
   - {fileID: 1042950151}
   - {fileID: 1846024228}
@@ -400,7 +401,6 @@ Transform:
   - {fileID: 112965439}
   - {fileID: 1678489896}
   - {fileID: 1533125801}
-  - {fileID: 984450887}
   - {fileID: 11656311}
   - {fileID: 1716555849}
   - {fileID: 2101887905}
@@ -6210,14 +6210,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11491750, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11485432, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
-      propertyPath: noEncounterHere
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b8b03d395f5734e98af91ccf44f9bf47, type: 2}
   m_IsPrefabParent: 0
@@ -7712,7 +7704,7 @@ Transform:
   - {fileID: 1054503123}
   - {fileID: 1420020830}
   m_Father: {fileID: 20252448}
-  m_RootOrder: 80
+  m_RootOrder: 68
 --- !u!1001 &985535134
 Prefab:
   m_ObjectHideFlags: 0

@@ -143,7 +143,7 @@ MonoBehaviour:
       altdialog: []
       terdialog: []
     leaveDialog: Bernard;On vous laisse y aller, on change de chemin !
-  timeInCar: 25
+  timeInCar: 35
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
