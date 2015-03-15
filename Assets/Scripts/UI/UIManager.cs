@@ -102,7 +102,6 @@ public class UIManager : MonoBehaviour {
 
 	void instanceArrow(ref GameObject obj, Transform parent, bool left, bool right, bool up, bool down, float time)
 	{
-		Debug.Log ("instance arrow");
 		obj = Instantiate (arrowPrefab, arrowPrefab.transform.position, arrowPrefab.transform.rotation) as GameObject;
 		obj.transform.SetParent(parent);
 		obj.transform.localPosition = Vector3.zero;
@@ -123,7 +122,6 @@ public class UIManager : MonoBehaviour {
 
 	public void destroyArrow()
 	{
-		Debug.Log ("destroy arrow");
 		if (arrowInstLeft != null)
 			Destroy (arrowInstLeft);
 		if (arrowInstRight != null)

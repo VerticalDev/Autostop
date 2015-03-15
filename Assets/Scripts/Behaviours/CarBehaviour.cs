@@ -55,7 +55,7 @@ public class CarBehaviour : MonoBehaviour {
 		if (goToStop && !soundPlayed && Vector3.Distance (targetStop.position, transform.position) < 4f) {
 			soundPlayed = true;
 			GetComponent<AudioSource>().PlayOneShot(soundFrein);
-
+			transform.FindChild("StopObject").gameObject.SetActive(true);
 			Invoke ("leaveScene", 1.3f);
 		}
 			

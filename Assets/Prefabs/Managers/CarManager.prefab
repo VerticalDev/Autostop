@@ -116,11 +116,12 @@ MonoBehaviour:
     passengers:
     - name: Bernard
     - name: Bernadette
+    - name: Autoradio
     dialogs:
     - passengerName: Bernard
       dialog:
       - Bernard;C'est si chou d'avoir pris quelqu'un...
-      - Bernadette;Il faut etre gentil dans la vie mon cheri
+      - Bernadette;Il faut etre gentil dans la vie mon cheri !
       altdialog:
       - Bernard;Je crois qu'on devrait... se marier !
       - Bernadette;Oui mais si tu ne regardes pas la route
@@ -132,7 +133,16 @@ MonoBehaviour:
       - Bernard;C'est beau, on se croirait dans un jeu video !
       altdialog: []
       terdialog: []
-    leaveDialog: 
+    - passengerName: Autoradio
+      dialog:
+      - Bernadette;Notre chanson fetiche...
+      - Bernard;Et notre pendentif fetiche...
+      - Bernadette;Et notre voiture fetiche...
+      - Bernard;Et nos 'bisoubisou' fetiche...
+      - Bernadette;Bernard ! Pas devant notre invite !
+      altdialog: []
+      terdialog: []
+    leaveDialog: Bernard;On vous laisse y aller, on change de chemin !
   timeInCar: 25
 --- !u!1001 &100100000
 Prefab:

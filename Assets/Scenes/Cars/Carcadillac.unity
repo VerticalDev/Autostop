@@ -167,18 +167,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1202919635}
     m_Modifications:
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].passengers.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 456314, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -210,42 +198,6 @@ Prefab:
     - target: {fileID: 456314, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[0].dialog.Array.data[1]
-      value: Bernadette;Il faut etre gentil dans la vie mon cheri !
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].passengers.Array.data[2].name
-      value: Autoradio
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].passengerName
-      value: Autoradio
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.data[0]
-      value: Bernadette;Notre chanson fetiche...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.data[1]
-      value: Bernard;Et notre pendentif fetiche...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.data[2]
-      value: Bernadette;Et notre voiture fetiche...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.data[3]
-      value: Bernard;Et nos 'bisoubisou' fetiche...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].dialogs.Array.data[2].dialog.Array.data[4]
-      value: Bernadette;Bernard ! Pas devant notre invite !
-      objectReference: {fileID: 0}
-    - target: {fileID: 11478982, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
-      propertyPath: cars.Array.data[2].leaveDialog
-      value: On vous laisse y aller, on change de chemin !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab32df6784c5d354591b3a628a1d7d74, type: 2}
@@ -690,7 +642,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

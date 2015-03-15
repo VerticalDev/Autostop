@@ -20,6 +20,8 @@ public class EncounterManager : MonoBehaviour {
 	public float maxEncounterDuration = 10f;
 
 	public Headbang headbang;
+	public AudioSource asource;
+	public AudioClip clipWoosh;
 
 	bool waitingEndOfEvent = false;
 
@@ -57,6 +59,7 @@ public class EncounterManager : MonoBehaviour {
 				break;
 			case EncounterType.FATIGUE:
 				UIManager.instance.startTired();
+				asource.Play();
 				break;
 			}
 
@@ -78,12 +81,14 @@ public class EncounterManager : MonoBehaviour {
 					break;
 				case EncounterType.MOUETTE:
 					headbang.endChecking();
+					asource.PlayOneShot (clipWoosh);
 					bee.SetActive(false);
 					UIManager.instance.destroyArrow();
 					UIManager.instance.destroyDialog();
 					break;
 				case EncounterType.FATIGUE:
 					UIManager.instance.finishTired();
+					asource.PlayOneShot (clipWoosh);
 					break;
 				}
 			}
@@ -95,6 +100,8 @@ public class EncounterManager : MonoBehaviour {
 
 	public void endOfEvent()
 	{
+		if (currentEncounterType != EncounterType.VACHE)
+			asource.PlayOneShot (clipWoosh);
 		bee.SetActive(false);
 		headbang.endChecking();
 		UIManager.instance.destroyArrow();

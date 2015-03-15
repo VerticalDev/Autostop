@@ -33,6 +33,8 @@ public class RoadManager : MonoBehaviour {
     public void instanciateCar(int carNum,int lane){
 		GameObject car = (GameObject)Instantiate ( (Object)cars [carNum], carSpawnTransform[lane].position, Quaternion.identity);
 		Transform mesh = car.transform.GetChild (0);
+		if (mesh.gameObject.name == "StopObject")
+			mesh = car.transform.GetChild (1);
 		if (lane == 1) car.GetComponent<Collider>().enabled = false;
 		mesh.GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, -Random.Range(0,3)*0.046875f);
 		car.name = "car";

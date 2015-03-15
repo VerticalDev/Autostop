@@ -30,6 +30,7 @@ public class Headbang : MonoBehaviour {
 		this.objectToCall = objectToCall;
 		this.methodName = methodName;
 		necessaryMovementRequired = requiredMovement;
+		necessaryMovementSuccessful = 0;
 		InvokeRepeating ("checkHeadBang", 0f, 0.1f);
 	}
 
