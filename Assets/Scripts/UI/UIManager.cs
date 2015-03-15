@@ -52,7 +52,12 @@ public class UIManager : MonoBehaviour {
 		} else if (tiredFinished) {
 			tiredLeft.fillAmount -= Time.deltaTime * speedDescente*5;
 			tiredRight.fillAmount -= Time.deltaTime * speedDescente*5;
-			if(tiredLeft.fillAmount <= 0f) tiredFinished = false;
+			if(tiredLeft.fillAmount <= 0f)
+			{
+				tiredLeft.enabled = false;
+				tiredRight.enabled = false;
+				tiredFinished = false;
+			}
 		}
 	}
 
@@ -97,6 +102,7 @@ public class UIManager : MonoBehaviour {
 
 	void instanceArrow(ref GameObject obj, Transform parent, bool left, bool right, bool up, bool down, float time)
 	{
+		Debug.Log ("instance arrow");
 		obj = Instantiate (arrowPrefab, arrowPrefab.transform.position, arrowPrefab.transform.rotation) as GameObject;
 		obj.transform.SetParent(parent);
 		obj.transform.localPosition = Vector3.zero;
@@ -117,6 +123,7 @@ public class UIManager : MonoBehaviour {
 
 	public void destroyArrow()
 	{
+		Debug.Log ("destroy arrow");
 		if (arrowInstLeft != null)
 			Destroy (arrowInstLeft);
 		if (arrowInstRight != null)
@@ -144,7 +151,6 @@ public class UIManager : MonoBehaviour {
 
 	public void startTired()
 	{
-		Debug.Log ("go");
 		headbang.startChecking (false, 5, this.gameObject, "finishTired");
 		displayDialog ("L'ENNUI VOUS GAGNE ! SECOUEZ LA TETE POUR VOUS REVEILLER !", 7f);
 		displayArrow (true, true, false, false, 7f);
@@ -156,12 +162,9 @@ public class UIManager : MonoBehaviour {
 
 	public void finishTired()
 	{
-		Debug.Log ("finish");
 		destroyDialog ();
 		destroyArrow ();
 		tiredFinished = true;
-		tiredLeft.enabled = false;
-		tiredRight.enabled = false;
 		tired = false;
 	}
 

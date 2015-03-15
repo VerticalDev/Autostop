@@ -42,7 +42,7 @@ public class EncounterManager : MonoBehaviour {
 			yield return new WaitForSeconds(Random.Range(encounterMinStart, encounterMaxStart));
 
 			waitingEndOfEvent = true;
-			int encounter = 2;//Random.Range(0, 3);
+			int encounter = Random.Range(0, 3);
 			currentEncounterType = (EncounterType)encounter;
 			switch(currentEncounterType)
 			{
@@ -63,7 +63,7 @@ public class EncounterManager : MonoBehaviour {
 			float timePast = 0f;
 			while(waitingEndOfEvent && timePast < maxEncounterDuration)
 			{
-				if(currentEncounterType == EncounterType.FATIGUE && UIManager.instance.tired) endOfEvent();
+				if(currentEncounterType == EncounterType.FATIGUE && UIManager.instance.tiredFinished) endOfEvent();
 				if(currentEncounterType == EncounterType.VACHE && VacheSpawner.instance.currentVache == null) endOfEvent();
 				timePast += Time.deltaTime;
 				yield return 0;

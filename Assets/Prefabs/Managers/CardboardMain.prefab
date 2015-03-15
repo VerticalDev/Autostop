@@ -1352,12 +1352,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentEncounterType: 3
-  encounterMinStart: 10
-  encounterMaxStart: 20
+  encounterMinStart: 5
+  encounterMaxStart: 15
   maxEncounterDuration: 10
   headbang: {fileID: 11454546}
   bee: {fileID: 147322}
-  noEncounterHere: 1
+  noEncounterHere: 0
 --- !u!114 &11486546
 MonoBehaviour:
   m_ObjectHideFlags: 1
