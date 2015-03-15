@@ -23,15 +23,22 @@ public class GameManager : MonoBehaviour {
 		winter2
 	}
 
+	public List<AudioClip> klaxons;
+
 	public float winterProbability = 0.3f;
 
 	public int carsTaken = 0; 
 
 	public bool goToRandomRoadAtStart = true;
 
+	public bool alreadyGoToOne = false;
+
 	// Use this for initialization
 	void Start () {
-		if(goToRandomRoadAtStart) gotoRoad (roadType.summer1);
+		if (goToRandomRoadAtStart) {
+			gotoRoad (roadType.summer1);
+			alreadyGoToOne = true;
+		}
 	}
 
 	public void gotoRoad(roadType type){
@@ -42,6 +49,8 @@ public class GameManager : MonoBehaviour {
 		string roadName = "Road";
 		roadName = string.Concat(roadName, ((Random.value<winterProbability) ? "winter": "summer"));
 		roadName = string.Concat(roadName, Random.Range(1,3).ToString());
+		if (roadName == "Roadsummer1" && alreadyGoToOne)
+			roadName = "Roadsummer2";
 		Debug.Log ("Goin' to : " + roadName);
 		async = Application.LoadLevelAsync (roadName);
 	}

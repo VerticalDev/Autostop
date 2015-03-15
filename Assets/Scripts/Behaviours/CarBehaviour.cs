@@ -10,16 +10,24 @@ public class CarBehaviour : MonoBehaviour {
 	public GameManager.carType type;
 
 	public bool pulled = false;
+	bool goToStop = false;
+	Transform targetStop;
+	bool soundPlayed = false;
+
+	public AudioClip soundFrein;
+
+	private Collider colliderCar;
 
 	void Awake(){
 		agent = GetComponent<NavMeshAgent> ();
+		colliderCar = GetComponent<Collider> ();
 	}
 
 	// Use this for initialization
 	void Start () {
 		if (dest != null) {
 			agent.SetDestination (dest.position);
-			if(dest.name.Contains("Target1")) GetComponent<Collider>().enabled = false;
+			if(dest.name.Contains("Target1")) colliderCar.enabled = false;
 		}
 		GameObject player = GameObject.Find ("CardboardMain");
 		if (player != null) {
@@ -29,7 +37,6 @@ public class CarBehaviour : MonoBehaviour {
 
 	public void moveToDest(){
 		agent.SetDestination (dest.position);
-
 	}
 	
 	// Update is called once per frame
@@ -37,22 +44,33 @@ public class CarBehaviour : MonoBehaviour {
 		if (!pulled && agent.remainingDistance>0 && (agent.remainingDistance <= agent.stoppingDistance))
 			Destroy (gameObject);
 
-		if (!pulled && limit != null && transform.position.x > limit.position.x) {
-			GetComponent<Collider> ().enabled = false;
-			//Bruit de klaxons
+		if (!pulled && limit != null && transform.position.x > limit.position.x && colliderCar.enabled) {
+			colliderCar.enabled = false;
+			if(Random.Range(0f, 100f) < 50f)
+			{
+				GetComponent<AudioSource>().PlayOneShot(GameManager.instance.klaxons[Random.Range(0, GameManager.instance.klaxons.Count)]);
+			}
+		}
+
+		if (goToStop && !soundPlayed && Vector3.Distance (targetStop.position, transform.position) < 4f) {
+			soundPlayed = true;
+			GetComponent<AudioSource>().PlayOneShot(soundFrein);
+
+			Invoke ("leaveScene", 1.3f);
 		}
 			
 	}
 
 	public void onLoadcastComplete(){
-		if (VacheSpawner.instance==null || !VacheSpawner.instance.closetoplayer) {
+		if (!goToStop && (VacheSpawner.instance==null || !VacheSpawner.instance.closetoplayer)) {
 			pulled = true;
-			Transform target = GameObject.Find("carStop").transform;	
-			agent.SetDestination (target.position); 
+			targetStop = GameObject.Find("carStop").transform;	
+			agent.SetDestination (targetStop.position); 
 			CardboxRaycaster.instance.off = true;
+			goToStop = true;
 		}
 
-		Invoke ("leaveScene", 2f);
+
 	}
 
 	public void leaveScene(){

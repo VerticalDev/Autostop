@@ -493,7 +493,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: s qsfqfsqdfsdfsdf sdfsdf sd fsdfsdf
 --- !u!114 &11428784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1018,7 +1018,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.69999981}
+  m_LocalPosition: {x: 0, y: 0, z: 4.4000001}
   m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
   m_Children: []
   m_Father: {fileID: 22457358}

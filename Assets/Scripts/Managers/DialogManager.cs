@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour {
@@ -35,7 +36,39 @@ public class DialogManager : MonoBehaviour {
 	private Text associatedText;
 	IEnumerator dialogRoutine(Dialog d)
 	{
-		foreach (string s in d.dialog) {
+		List<string> dialogToShow = new List<string>();
+		int dialogId = Random.Range (0, 3);
+
+		switch (dialogId) {
+		case 0:
+			dialogToShow = d.dialog;
+			break;
+		case 1:
+			if(d.altdialog.Count > 0)
+			{
+				dialogToShow = d.altdialog;
+			}else{
+				dialogToShow = d.dialog;
+			}
+			break;
+		case 2:
+			if(d.terdialog.Count > 0)
+			{
+				dialogToShow = d.terdialog;
+			}else{
+				if(d.altdialog.Count > 0)
+				{
+					dialogToShow = Random.Range(0, 2) == 0 ? d.dialog : d.altdialog;
+				}else{
+					dialogToShow = d.dialog;
+				}
+			}
+			break;
+		}
+
+
+
+		foreach (string s in dialogToShow) {
 			Transform box = transform.FindChild(s.Split(';')[0]);
 			BoxDialogController bdc = box.GetComponent<BoxDialogController>();
 

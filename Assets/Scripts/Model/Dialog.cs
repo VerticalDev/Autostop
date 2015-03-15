@@ -7,5 +7,7 @@ public class Dialog {
 
 	public string passengerName; 
 	public List<string> dialog;
+	public List<string> altdialog;
+	public List<string> terdialog;
 
 }

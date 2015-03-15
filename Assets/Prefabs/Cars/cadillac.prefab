@@ -12,6 +12,7 @@ GameObject:
   - 195: {fileID: 19575534}
   - 114: {fileID: 11484432}
   - 114: {fileID: 11443930}
+  - 82: {fileID: 8288840}
   m_Layer: 8
   m_Name: cadillac
   m_TagString: Untagged
@@ -105,6 +106,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 3}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!82 &8288840
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150994}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 55e98d5ba1253aa4c92093150658da5b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 3
+  MaxDistance: 15
+  Pan2D: 1
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9508950
 Animator:
   serializedVersion: 3
@@ -136,6 +206,7 @@ MonoBehaviour:
   methodName: onRaycastLoad
   actionMethod: onLoadcastComplete
   timeToCharge: 1
+  disableColliderOnComplete: 1
 --- !u!114 &11484432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,7 +220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dest: {fileID: 0}
   limit: {fileID: 0}
+  type: 3
   pulled: 0
+  soundFrein: {fileID: 8300000, guid: d7f3f1d4f54ace64c979495ef42a6684, type: 3}
 --- !u!195 &19575534
 NavMeshAgent:
   m_ObjectHideFlags: 1

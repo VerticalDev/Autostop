@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.55338669, y: 1.76270843, z: .805903912}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,6 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5236678c5915f34db07cbed80971347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  klaxons:
+  - {fileID: 8300000, guid: 1f7fcf8622133e94c956aa3689b1d8ea, type: 3}
+  - {fileID: 8300000, guid: 52e1b21e10dc79748b2e04053ae631d4, type: 3}
+  - {fileID: 8300000, guid: 94cb2bcec1b86fa4f9d257b43a2fab0c, type: 3}
+  - {fileID: 8300000, guid: badd18c5a793c5a4ca6a8a21dcbd6485, type: 3}
+  - {fileID: 8300000, guid: db4da134f553e1f41953f84720ac551a, type: 3}
+  - {fileID: 8300000, guid: e1d32849ffcca9549a98282895a6a371, type: 3}
+  - {fileID: 8300000, guid: fff40ffe19456384183b1eb6ab246f38, type: 3}
   winterProbability: .5
   carsTaken: 0
   goToRandomRoadAtStart: 1

@@ -51,31 +51,87 @@ MonoBehaviour:
     - passengerName: Bob
       dialog:
       - Bob;Hun tss hun tss...
+      altdialog:
+      - Bob;C'est sympa de partager la banquette man
+      terdialog: []
     - passengerName: Rasta
       dialog:
       - Rasta;Oh man ! C'est sympa d'avoir pris un frere !
       - Marley;T'inquietes man ! L'amour, c'est la vie !
       - Rasta;C'est pas l'oxygene plutot man ?
+      altdialog: []
+      terdialog: []
     - passengerName: Yolo
       dialog:
       - Yolo;Buffalo solider tut tut... tut tut...
       - Marley;Dwedeuloque wasta... tutut...
+      altdialog: []
+      terdialog: []
     - passengerName: Autoradio
       dialog:
       - Autoradio;Krrrk kr rkrrrrrkrr
       - Yolo;Hey, l'autoradio de l'amour man !
+      altdialog: []
+      terdialog: []
     - passengerName: Marley
       dialog:
       - Marley;C'est la detente totale !
       - Yolo;En route vers l'aventure !
+      altdialog: []
+      terdialog: []
     leaveDialog: Yolo;Desole man ! On se separe ici !
-  - carId: ClassyRoad
-    passengers: []
-    dialogs: []
-    leaveDialog: 
-  - carId: PussyWagon
-    passengers: []
-    dialogs: []
+  - carId: Mama
+    passengers:
+    - name: Mama
+    - name: Alex
+    - name: Axel
+    dialogs:
+    - passengerName: Mama
+      dialog:
+      - Mama;Nous partons en vacances !
+      - Mama;C'est merveilleux hein les enfants ?
+      - Alex;On est bientot arrive ?
+      - Axel;Zoum zoum zoumzoumzoum...
+      altdialog:
+      - Mama;Alors comme ca vous venez de Roubaix ?
+      - Mama;Moi je viens de Paris
+      - Mama;Enfin de la banlieu...
+      - Mama;Oh mais je parle trop excusez moi !
+      terdialog: []
+    - passengerName: Alex
+      dialog:
+      - Alex;Pfff hihihihi le nez du monsieur...
+      - Mama;Alex !! Et les manieres ?!
+      altdialog: []
+      terdialog: []
+    - passengerName: Axel
+      dialog:
+      - Axel;Je m'appelle Alex !
+      - Alex;Mais non c'est moi ! Maman il recommence !
+      - Mama;Ca suffit vous deux !
+      altdialog: []
+      terdialog: []
+    leaveDialog: Mama;Nos chemins se separent ici, bon voyage monsieur !
+  - carId: LoveCar
+    passengers:
+    - name: Bernard
+    - name: Bernadette
+    dialogs:
+    - passengerName: Bernard
+      dialog:
+      - Bernard;C'est si chou d'avoir pris quelqu'un...
+      - Bernadette;Il faut etre gentil dans la vie mon cheri
+      altdialog:
+      - Bernard;Je crois qu'on devrait... se marier !
+      - Bernadette;Oui mais si tu ne regardes pas la route
+      - Bernadette;Ca ne risque pas d'arriver !
+      terdialog: []
+    - passengerName: Bernadette
+      dialog:
+      - Bernadette;Pardon nous nous aimons tellement !
+      - Bernard;C'est beau, on se croirait dans un jeu video !
+      altdialog: []
+      terdialog: []
     leaveDialog: 
   timeInCar: 25
 --- !u!1001 &100100000
