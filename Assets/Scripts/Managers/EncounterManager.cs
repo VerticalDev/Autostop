@@ -23,6 +23,8 @@ public class EncounterManager : MonoBehaviour {
 
 	bool waitingEndOfEvent = false;
 
+	public GameObject bee;
+
 	public bool noEncounterHere = false;
 	
 	void Start()
@@ -40,7 +42,7 @@ public class EncounterManager : MonoBehaviour {
 			yield return new WaitForSeconds(Random.Range(encounterMinStart, encounterMaxStart));
 
 			waitingEndOfEvent = true;
-			int encounter = Random.Range(0, 3);
+			int encounter = 2;//Random.Range(0, 3);
 			currentEncounterType = (EncounterType)encounter;
 			switch(currentEncounterType)
 			{
@@ -48,6 +50,7 @@ public class EncounterManager : MonoBehaviour {
 				VacheSpawner.instance.putVache();
 				break;
 			case EncounterType.MOUETTE:
+				bee.SetActive(true);
 				headbang.startChecking(false, 5, this.gameObject, "endOfEvent");
 				UIManager.instance.displayDialog("AAAAH ! SECOUEZ LA TETE DE DROITE A GAUCHE !", maxEncounterDuration);
 				UIManager.instance.displayArrow(true, true, false, false, maxEncounterDuration);
@@ -75,6 +78,7 @@ public class EncounterManager : MonoBehaviour {
 					break;
 				case EncounterType.MOUETTE:
 					headbang.endChecking();
+					bee.SetActive(false);
 					UIManager.instance.destroyArrow();
 					UIManager.instance.destroyDialog();
 					break;
@@ -91,6 +95,7 @@ public class EncounterManager : MonoBehaviour {
 
 	public void endOfEvent()
 	{
+		bee.SetActive(false);
 		headbang.endChecking();
 		UIManager.instance.destroyArrow();
 		UIManager.instance.destroyDialog();

@@ -271,7 +271,6 @@ GameObject:
   - 4: {fileID: 440548}
   - 33: {fileID: 3371874}
   - 23: {fileID: 2331730}
-  - 95: {fileID: 9573966}
   m_Layer: 0
   m_Name: bee
   m_TagString: Untagged
@@ -765,23 +764,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &9573966
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150994}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 71f32696b6ff0c6499ed8b5f1abe1a14, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9579328
 Animator:
   serializedVersion: 3
@@ -807,7 +789,7 @@ Animation:
   m_GameObject: {fileID: 147322}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: e99fe64659ab12848819a477f002a526, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: e99fe64659ab12848819a477f002a526, type: 2}
   m_WrapMode: 0
@@ -1374,6 +1356,7 @@ MonoBehaviour:
   encounterMaxStart: 20
   maxEncounterDuration: 10
   headbang: {fileID: 11454546}
+  bee: {fileID: 147322}
   noEncounterHere: 1
 --- !u!114 &11486546
 MonoBehaviour:

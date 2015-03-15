@@ -144,6 +144,7 @@ public class UIManager : MonoBehaviour {
 
 	public void startTired()
 	{
+		Debug.Log ("go");
 		headbang.startChecking (false, 5, this.gameObject, "finishTired");
 		displayDialog ("L'ENNUI VOUS GAGNE ! SECOUEZ LA TETE POUR VOUS REVEILLER !", 7f);
 		displayArrow (true, true, false, false, 7f);
@@ -155,6 +156,7 @@ public class UIManager : MonoBehaviour {
 
 	public void finishTired()
 	{
+		Debug.Log ("finish");
 		destroyDialog ();
 		destroyArrow ();
 		tiredFinished = true;
