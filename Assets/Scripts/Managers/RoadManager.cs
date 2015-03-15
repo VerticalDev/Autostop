@@ -20,7 +20,9 @@ public class RoadManager : MonoBehaviour {
 
 	void Update()
 	{
-
+		if (Input.GetKeyDown (KeyCode.A)) {
+			instanciateCar(Random.Range(0,cars.Count),0);
+		}
 	}
 
 	public IEnumerator carSpawnRoutine(){
@@ -36,7 +38,7 @@ public class RoadManager : MonoBehaviour {
 		if (mesh.gameObject.name == "StopObject")
 			mesh = car.transform.GetChild (1);
 		if (lane == 1) car.GetComponent<Collider>().enabled = false;
-		mesh.GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, -Random.Range(0,3)*0.046875f);
+		mesh.GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (0, -Random.Range(0,5)*0.046875f);
 		car.name = "car";
 		displayedCars.Add (car);
 
