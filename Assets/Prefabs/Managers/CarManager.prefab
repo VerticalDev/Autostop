@@ -50,33 +50,31 @@ MonoBehaviour:
     dialogs:
     - passengerName: Bob
       dialog:
-      - Bob;Hun tss hun tss...
-      altdialog:
-      - Bob;C'est sympa de partager la banquette man
+      - "Bob;J'ai oubli\xE9 mes lunettes man"
+      - Bob;Je vois des pixels partout...
+      altdialog: []
       terdialog: []
     - passengerName: Rasta
       dialog:
-      - Rasta;Oh man ! C'est sympa d'avoir pris un frere !
-      - Marley;T'inquietes man ! L'amour, c'est la vie !
-      - Rasta;C'est pas l'oxygene plutot man ?
+      - Rasta;L'amour c'est la vie, man
+      - Yolo;C'est pas plutot l'oxygene mon frere ?
+      - Resta;Ouaaais... L'oxygene ET l'amour !
       altdialog: []
       terdialog: []
     - passengerName: Yolo
       dialog:
-      - Yolo;Buffalo solider tut tut... tut tut...
-      - Marley;Dwedeuloque wasta... tutut...
+      - Yolo;Hey ! Bienvenue a bord, man !
+      - Marley;Trop sympa d'avoir pris un frere, man !
       altdialog: []
       terdialog: []
     - passengerName: Autoradio
       dialog:
-      - Autoradio;Krrrk kr rkrrrrrkrr
-      - Yolo;Hey, l'autoradio de l'amour man !
+      - Marley;Ecoute ca man, c'est la musique de l'amour
       altdialog: []
       terdialog: []
     - passengerName: Marley
       dialog:
-      - Marley;C'est la detente totale !
-      - Yolo;En route vers l'aventure !
+      - Marley;C'est la detente totale man !
       altdialog: []
       terdialog: []
     leaveDialog: Yolo;Desole man ! On se separe ici !
@@ -89,29 +87,26 @@ MonoBehaviour:
     - passengerName: Mama
       dialog:
       - Mama;Nous partons en vacances !
-      - Mama;C'est merveilleux hein les enfants ?
-      - Alex;On est bientot arrive ?
-      - Axel;Zoum zoum zoumzoumzoum...
       altdialog:
-      - Mama;Alors comme ca vous venez de Roubaix ?
-      - Mama;Moi je viens de Paris
-      - Mama;Enfin de la banlieu...
+      - Mama;Alors comme ca ... vous etes celibataire ?
+      - Mama;Vous venez de Roubaix ?
+      - Mama;Moi je viens de Paris, enfin la banlieu...
       - Mama;Oh mais je parle trop excusez moi !
       terdialog: []
     - passengerName: Alex
       dialog:
-      - Alex;Pfff hihihihi le nez du monsieur...
-      - Mama;Alex !! Et les manieres ?!
+      - Alex;Maman, quand est-ce qu'on arrive ?
       altdialog: []
       terdialog: []
     - passengerName: Axel
       dialog:
-      - Axel;Je m'appelle Alex !
-      - Alex;Mais non c'est moi ! Maman il recommence !
-      - Mama;Ca suffit vous deux !
-      altdialog: []
+      - Axel;Les crottes de nez c'est bon
+      altdialog:
+      - Axel;Pfff hihihi le nez du monsieur...
+      - Alex;Je m'appelle Alex !
+      - Axel;Mais non c'est moi Alex ! Maman il recommence !
       terdialog: []
-    leaveDialog: Mama;Nos chemins se separent ici, bon voyage monsieur !
+    leaveDialog: Mama;Nos chemins se separent ici, bon courage monsieur !
   - carId: LoveCar
     passengers:
     - name: Bernard
@@ -120,8 +115,8 @@ MonoBehaviour:
     dialogs:
     - passengerName: Bernard
       dialog:
-      - Bernard;C'est si chou d'avoir pris quelqu'un...
-      - Bernadette;Il faut etre gentil dans la vie mon cheri !
+      - Bernard;Pardon nous nous aimons tellement !
+      - Bernadette;C'est beau, on se croirait dans un jeu video !
       altdialog:
       - Bernard;Je crois qu'on devrait... se marier !
       - Bernadette;Oui mais si tu ne regardes pas la route
@@ -129,20 +124,17 @@ MonoBehaviour:
       terdialog: []
     - passengerName: Bernadette
       dialog:
-      - Bernadette;Pardon nous nous aimons tellement !
-      - Bernard;C'est beau, on se croirait dans un jeu video !
+      - Bernadette;C'est si chou d'avoir pris quelqu'un...
+      - Bernard;Il faut entre gentil dans la vie ma cherie...
       altdialog: []
       terdialog: []
     - passengerName: Autoradio
       dialog:
-      - Bernadette;Notre chanson fetiche...
-      - Bernard;Et notre pendentif fetiche...
-      - Bernadette;Et notre voiture fetiche...
-      - Bernard;Et nos 'bisoubisou' fetiche...
-      - Bernadette;Bernard ! Pas devant notre invite !
+      - Bernard;Notre chanson fetiche...
+      - Bernadette;Et notre pendentif fetiche...
       altdialog: []
       terdialog: []
-    leaveDialog: Bernard;On vous laisse y aller, on change de chemin !
+    leaveDialog: Bernard;On vous laisse ici, bonne route !
   timeInCar: 35
 --- !u!1001 &100100000
 Prefab:
