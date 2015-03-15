@@ -12,6 +12,9 @@ public class VacheBehaviour : MonoBehaviour {
 
 	NavMeshAgent agent;
 
+	AudioSource asource;
+	public AudioClip meuh;
+
 	public Transform player;
 	public VacheSpawner spawner;
 
@@ -21,6 +24,7 @@ public class VacheBehaviour : MonoBehaviour {
 	void Start () {
 		agent = GetComponent<NavMeshAgent> ();
 		anim = GetComponent<Animation> ();
+		asource = GetComponent<AudioSource> ();
 		agent.SetDestination (player.position);
 		anim["Jump"].wrapMode = WrapMode.Loop;
 		anim.Play("Jump");
@@ -70,6 +74,7 @@ public class VacheBehaviour : MonoBehaviour {
 		anim["Jump"].wrapMode = WrapMode.Loop;
 		anim.Play("Jump");
 		goback = true;
+		asource.PlayOneShot(meuh);
 		spawner.closetoplayer = false;
 	}
 }
